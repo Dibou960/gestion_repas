@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des Repas</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5 mb-3">Gestion des Repas</h1>
+
+    <!-- Formulaire pour ajouter un repas -->
+    <form id="ajoutForm" class="mb-3">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" id="nomRepas" placeholder="Nom du repas" required>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="descriptionRepas" placeholder="Description" required>
+        </div>
+        <div class="col">
+          <select id="categorieRepas" class="form-control" required>
+            <option value="Petit-déjeuner">Petit-déjeuner</option>
+            <option value="Déjeuner">Déjeuner</option>
+            <option value="Dîner">Dîner</option>
+          </select>
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-primary">Ajouter Repas</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Liste des repas -->
+    <div id="listeRepas" class="card-deck"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
